@@ -43,11 +43,16 @@ public class Renta {
     public double calcularTotal() {
         return vehiculo.calcularCosto(calcularDias());
     }
-
     @Override
     public String toString() {
         return "Cliente: " + cliente +
                 "\nVehiculo: " + vehiculo +
+                "\nFecha renta: " + fechaRenta +
+                "\nInicio: " + fechaInicio +
+                "\nFin: " + fechaFin +
+                "\nDias: " + calcularDias() +
                 "\nTotal: $" + calcularTotal();
+    }
+
     }
 }
